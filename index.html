@@ -52,15 +52,13 @@ Now if you want audio to continue as a background you can go to the next passage
 </tw-passagedata><tw-passagedata pid="7" name="next passage" tags="" position="550,875" size="100,100">Audio still playing. To stop this music go to the final passage and review the script code.
 
 [[Next passage to stop music]]
-</tw-passagedata><tw-passagedata pid="8" name="Next passge to stop music" tags="" position="550,1000" size="100,100">No music
-
-&lt;script&gt;
+</tw-passagedata><tw-passagedata pid="8" name="Next passage to stop music" tags="" position="550,1000" size="100,100">&lt;script&gt;
     if (window.audio) {
         window.audio.pause();
         window.audio.currentTime = 0; // Optional: resets to start
         window.audio = null; // Remove the reference to stop it playing again
     }
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="9" name="Next passage to stop music" tags="" position="675,1000" size="100,100"></tw-passagedata></tw-storydata>
+&lt;/script&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
